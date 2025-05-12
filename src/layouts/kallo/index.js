@@ -33,7 +33,7 @@ import Table from "examples/Tables/Table";
 import authorsTableData from "layouts/tables/data/authorsTableData";
 import projectsTableData from "layouts/tables/data/projectsTableData";
 
-function Tables() {
+function Kallo() {
   const { columns, rows } = authorsTableData;
   const { columns: prCols, rows: prRows } = projectsTableData;
 
@@ -95,4 +95,4 @@ function Tables() {
   );
 }
 
-export default Tables;
+export default Kallo;

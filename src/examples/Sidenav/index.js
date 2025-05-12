@@ -5,10 +5,10 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
+* Copyright 2025 Creative Tim (https://www.creative-tim.com/)
 * Licensed under MIT (https://github.com/creativetimofficial/vision-ui-free-react/blob/master LICENSE.md)
 
-* Design and Coded by Simmmple & Creative Tim
+
 
 =========================================================
 
@@ -33,11 +33,9 @@ import Icon from "@mui/material/Icon";
 // Vision UI Dashboard React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
-import VuiButton from "components/VuiButton";
 
 // Vision UI Dashboard React example components
 import SidenavCollapse from "examples/Sidenav/SidenavCollapse";
-import SidenavCard from "examples/Sidenav/SidenavCard";
 
 // Custom styles for the Sidenav
 import SidenavRoot from "examples/Sidenav/SidenavRoot";
@@ -224,22 +222,7 @@ function Sidenav({ color, brandName, routes, ...rest }) {
             pt: 2,
           },
         })}
-      >
-        <SidenavCard color={color} />
-        <VuiBox mt={2}>
-          <VuiButton
-            component="a"
-            href="https://creative-tim.com/product/vision-ui-dashboard-pro-react"
-            target="_blank"
-            rel="noreferrer"
-            variant="gradient"
-            color={color}
-            fullWidth
-          >
-            Upgrade to PRO
-          </VuiButton>
-        </VuiBox>
-      </VuiBox>
+      ></VuiBox>
     </SidenavRoot>
   );
 }

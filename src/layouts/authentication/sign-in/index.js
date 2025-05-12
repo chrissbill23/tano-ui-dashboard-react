@@ -5,10 +5,10 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
+* Copyright 2025 Creative Tim (https://www.creative-tim.com/)
 * Licensed under MIT (https://github.com/creativetimofficial/vision-ui-free-react/blob/master LICENSE.md)
 
-* Design and Coded by Simmmple & Creative Tim
+
 
 =========================================================
 
@@ -47,20 +47,15 @@ function SignIn() {
 
   return (
     <CoverLayout
-      title="Nice to see you!"
+      title="Bienvenu :)"
       color="white"
-      description="Enter your email and password to sign in"
-      premotto="INSPIRED BY THE FUTURE:"
-      motto="THE VISION UI DASHBOARD"
+      premotto="Tano inspire le future:"
+      motto="LE DASHBOARD DES ADMINS"
+      signin={true}
       image={bgSignIn}
     >
       <VuiBox component="form" role="form">
         <VuiBox mb={2}>
-          <VuiBox mb={1} ml={0.5}>
-            <VuiTypography component="label" variant="button" color="white" fontWeight="medium">
-              Email
-            </VuiTypography>
-          </VuiBox>
           <GradientBorder
             minWidth="100%"
             padding="1px"
@@ -71,15 +66,16 @@ function SignIn() {
               palette.gradients.borderLight.angle
             )}
           >
-            <VuiInput type="email" placeholder="Your email..." fontWeight="500" />
+            <VuiInput
+              type="username"
+              placeholder="Nom utilisateur..."
+              sx={({ typography: { size } }) => ({
+                fontSize: size.sm,
+              })}
+            />
           </GradientBorder>
         </VuiBox>
         <VuiBox mb={2}>
-          <VuiBox mb={1} ml={0.5}>
-            <VuiTypography component="label" variant="button" color="white" fontWeight="medium">
-              Password
-            </VuiTypography>
-          </VuiBox>
           <GradientBorder
             minWidth="100%"
             borderRadius={borders.borderRadius.lg}
@@ -92,7 +88,7 @@ function SignIn() {
           >
             <VuiInput
               type="password"
-              placeholder="Your password..."
+              placeholder="Mot de passe..."
               sx={({ typography: { size } }) => ({
                 fontSize: size.sm,
               })}
@@ -108,17 +104,17 @@ function SignIn() {
             onClick={handleSetRememberMe}
             sx={{ cursor: "pointer", userSelect: "none" }}
           >
-            &nbsp;&nbsp;&nbsp;&nbsp;Remember me
+            &nbsp;&nbsp;&nbsp;&nbsp;Se souvenir de moi
           </VuiTypography>
         </VuiBox>
         <VuiBox mt={4} mb={1}>
           <VuiButton color="info" fullWidth>
-            SIGN IN
+            Connexion
           </VuiButton>
         </VuiBox>
         <VuiBox mt={3} textAlign="center">
           <VuiTypography variant="button" color="text" fontWeight="regular">
-            Don&apos;t have an account?{" "}
+            Vous n'avez pas un compte?{" "}
             <VuiTypography
               component={Link}
               to="/authentication/sign-up"
@@ -126,7 +122,7 @@ function SignIn() {
               color="white"
               fontWeight="medium"
             >
-              Sign up
+              Contactez-nous
             </VuiTypography>
           </VuiTypography>
         </VuiBox>

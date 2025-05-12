@@ -399,7 +399,7 @@ If you have questions or need help integrating the product please [contact us](h
 
 ## Licensing
 
-- Copyright 2021 [Creative Tim](https://www.creative-tim.com?ref=readme-vudreact)
+- Copyright 2025 [Creative Tim](https://www.creative-tim.com?ref=readme-vudreact)
 
 - Creative Tim [License](https://www.creative-tim.com/license?ref=readme-vudreact)
 

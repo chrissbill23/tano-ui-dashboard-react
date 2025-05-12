@@ -5,10 +5,10 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
+* Copyright 2025 Creative Tim (https://www.creative-tim.com/)
 * Licensed under MIT (https://github.com/creativetimofficial/vision-ui-free-react/blob/master LICENSE.md)
 
-* Design and Coded by Simmmple & Creative Tim
+
 
 =========================================================
 
@@ -41,6 +41,7 @@
 // Vision UI Dashboard React layouts
 import Dashboard from "layouts/dashboard";
 import Tables from "layouts/tables";
+import Kallo from "layouts/kallo";
 import Billing from "layouts/billing";
 import RTL from "layouts/rtl";
 import Profile from "layouts/profile";
@@ -52,7 +53,9 @@ import { IoRocketSharp } from "react-icons/io5";
 import { IoIosDocument } from "react-icons/io";
 import { BsFillPersonFill } from "react-icons/bs";
 import { IoBuild } from "react-icons/io5";
-import { BsCreditCardFill } from "react-icons/bs";
+import { BsJournalCode } from "react-icons/bs";
+import { GrShieldSecurity } from "react-icons/gr";
+import { SiSpringsecurity } from "react-icons/si";
 import { IoStatsChart } from "react-icons/io5";
 import { IoHome } from "react-icons/io5";
 
@@ -68,7 +71,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Tables",
+    name: "Statistiques",
     key: "tables",
     route: "/tables",
     icon: <IoStatsChart size="15px" color="inherit" />,
@@ -77,10 +80,19 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Billing",
-    key: "billing",
+    name: "Kallo",
+    key: "kallo",
+    route: "/kallo",
+    icon: <BsJournalCode size="15px" color="inherit" />,
+    component: Kallo,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Mara",
+    key: "mara",
     route: "/billing",
-    icon: <BsCreditCardFill size="15px" color="inherit" />,
+    icon: <SiSpringsecurity size="15px" color="inherit" />,
     component: Billing,
     noCollapse: true,
   },
@@ -107,7 +119,7 @@ const routes = [
     type: "collapse",
     name: "Sign In",
     key: "sign-in",
-    route: "/authentication/sign-in",
+    route: "/",
     icon: <IoIosDocument size="15px" color="inherit" />,
     component: SignIn,
     noCollapse: true,

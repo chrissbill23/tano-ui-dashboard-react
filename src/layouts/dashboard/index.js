@@ -5,10 +5,10 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
+* Copyright 2025 Creative Tim (https://www.creative-tim.com/)
 * Licensed under MIT (https://github.com/creativetimofficial/vision-ui-free-react/blob/master LICENSE.md)
 
-* Design and Coded by Simmmple & Creative Tim
+
 
 =========================================================
 
@@ -72,7 +72,7 @@ function Dashboard() {
           <Grid container spacing={3}>
             <Grid item xs={12} md={6} xl={3}>
               <MiniStatisticsCard
-                title={{ text: "today's money", fontWeight: "regular" }}
+                title={{ text: "Total utilisateurs", fontWeight: "regular" }}
                 count="$53,000"
                 percentage={{ color: "success", text: "+55%" }}
                 icon={{ color: "info", component: <IoWallet size="22px" color="white" /> }}
@@ -80,7 +80,7 @@ function Dashboard() {
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
               <MiniStatisticsCard
-                title={{ text: "today's users" }}
+                title={{ text: "Total projets" }}
                 count="2,300"
                 percentage={{ color: "success", text: "+3%" }}
                 icon={{ color: "info", component: <IoGlobe size="22px" color="white" /> }}

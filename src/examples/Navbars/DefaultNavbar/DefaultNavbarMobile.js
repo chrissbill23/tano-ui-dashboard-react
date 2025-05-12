@@ -5,10 +5,10 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
+* Copyright 2025 Creative Tim (https://www.creative-tim.com/)
 * Licensed under MIT (https://github.com/creativetimofficial/vision-ui-free-react/blob/master LICENSE.md)
 
-* Design and Coded by Simmmple & Creative Tim
+
 
 =========================================================
 
@@ -68,8 +68,6 @@ function DefaultNavbarMobile({ open, close }) {
       <VuiBox px={0.5}>
         <DefaultNavbarLink icon="donut_large" name="dashboard" route="/dashboard" />
         <DefaultNavbarLink icon="person" name="profile" route="/profile" />
-        <DefaultNavbarLink icon="account_circle" name="sign up" route="/authentication/sign-up" />
-        <DefaultNavbarLink icon="key" name="sign in" route="/authentication/sign-in" />
       </VuiBox>
     </Menu>
   );
